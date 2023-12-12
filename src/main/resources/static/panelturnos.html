@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Clinica Odonto</title>
+    <script type="text/javascript" src="/js/turno/put_turnos.js"></script>
+    <script type="text/javascript" src="/js/turno/post_turnos.js"></script>
+    <script type="text/javascript" src="/js/turno/get_turnos.js"></script>
+    <script type="text/javascript" src="/js/turno/delete_turnos.js"></script>
+</head>
+<body>
+    <h1>Panel de Turnos</h1>
+    <br>
+    <div>
+        <h2>Eliga la opcion que desee administrar</h2>
+        <ul>
+            <li>
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/panelodontologos.html">Odontologos</a>
+            </li>
+            <li>
+                <a href="/panelpacientes.html">Pacientes</a>
+            </li>
+            <li>
+                <a href="/panelusuarios.html">Usuarios</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Agregue Turnos</h2>
+            <form id="add_turnos">
+                <div class="form-group">
+                    <label class="control-label" for="odontologoid">ID del Odontologo:</label>
+                    <input type="number" class="form-control" id="odontologoid"
+                           placeholder="Ingrese el ID del Odontologo" name="odontologoid" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="pacienteid">ID del Paciente:</label>
+                    <input type="number" class="form-control" id="pacienteid"
+                           placeholder="Ingrese el ID del Paciente" name="pacienteid" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="fecha">Fecha de Cita:</label>
+                    <input type="date" class="form-control" id="fecha"
+                           placeholder="Ingrese la Fecha de Cita" name="fecha" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="hora">Hora de Cita:</label>
+                    <input type="text" class="form-control" id="hora"
+                           placeholder="Ejemplo: '18:00'" name="hora" required></input>
+                </div>
+
+                <button type="submit">Guardar</button>
+            </form>
+        </tr>
+    </div>
+    <div>
+    <h3>Listas Total de Registros</h3>
+        <table id="tablaturnos">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>ID del Odontologo</th>
+                <th>ID del Paciente</th>
+                <th>Fecha de Cita</th>
+                <th>Hora de Cita</th>
+                <th></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="row">
+        <div id="div_actualizacion_turno" style="display: none; background-color:#e6fffa; padding:10px; border-radius:3px">
+            <form id="formulario_actualizacion_turno">
+                <div class="form-group">
+                    <label >Id:</label>
+                    <input type="number" class="form-control" id="turno_id" readonly>
+                </div>
+                <div class="form-group">
+                    <label >ID del Odontologo:</label>
+                    <input type="number" class="form-control" placeholder="Odontologoid" id="odontologoid_m">
+                </div>
+                <div class="form-group">
+                    <label >ID del Paciente:</label>
+                    <input type="number" class="form-control" placeholder="Pacienteid" id="pacienteid_m">
+                </div>
+                <div class="form-group">
+                    <label >Fecha de Cita:</label>
+                    <input type="date" class="form-control" placeholder="Fecha" id="fecha_m">
+                </div>
+                <div class="form-group">
+                    <label >Hora de Cita:</label>
+                    <input type="text" class="form-control" placeholder="Hora" id="hora_m">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            <div id="response" style="display:none; margin:10px"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/ClinicaOdonto2/templates/listaPacientes.html">Listado de Pacientes</a>
+        <a class="nav-link" href="/ClinicaOdonto2/templates/index.html">Alta de Pacientes</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Odontologos</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaOdontologos.html">Listado de Odontologos</a>
+        <a class="nav-link" href="/altaOdontologos.html">Alta de Odontologos</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Turnos</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaTurnos.html">Listado de Turnos</a>
+        <a class="nav-link" href="/altaTurnos.html">Alta de Turnos</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Usuarios</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaUsuarios.html">Listado de Usuarios</a>
+        <a class="nav-link" href="/altaUsuarios.html">Alta de Usuarios</a>
+    </li>
+</ul>
+<hr>
+</div>
+ <script type="text/javascript" src="/ClinicaOdonto2/templates/js/post_students.js"></script>
+
+ -->

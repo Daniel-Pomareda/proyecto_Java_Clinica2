@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Clinica Odonto</title>
+    <script type="text/javascript" src="/js/usuario/put_usuarios.js"></script>
+    <script type="text/javascript" src="/js/usuario/post_usuarios.js"></script>
+    <script type="text/javascript" src="/js/usuario/get_usuarios.js"></script>
+    <script type="text/javascript" src="/js/usuario/delete_usuarios.js"></script>
+</head>
+<body>
+    <h1>Panel de Usuarios</h1>
+    <br>
+    <div>
+        <h2>Eliga la opcion que desee administrar</h2>
+        <ul>
+            <li>
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/panelodontologos.html">Odontologos</a>
+            </li>
+            <li>
+                <a href="/panelturnos.html">Turnos</a>
+            </li>
+            <li>
+                <a href="/panelpacientes.html">Pacientes</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Agregue Usuarios</h2>
+            <form id="add_usuarios">
+                <div class="form-group">
+                    <label class="control-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre"
+                           placeholder="Ingrese el nombre" name="nombre" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido"
+                           placeholder="Ingrese el apellido" name="apellido" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="nombreUsuario">Nombre de Usuario:</label>
+                    <input type="text" class="form-control" id="nombreUsuario"
+                           placeholder="Ingrese el Nombre de Usuario" name="nombreUsuario" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="contrasenia">Contraseña:</label>
+                    <input type="text" class="form-control" id="contrasenia"
+                           placeholder="Ingrese la Contraseña" name="dni" contrasenia></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="rol">Rol:</label>
+                    <input type="text" class="form-control" id="rol"
+                           placeholder="Ingrese su Rol" name="rol" required></input>
+                </div>
+
+                <button type="submit">Guardar</button>
+            </form>
+        </tr>
+    </div>
+    <div>
+    <h3>Listas Total de Registros</h3>
+        <table id="tablaUsuarios">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Nombre de Usuario</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+                <th></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="row">
+        <div id="div_actualizacion_usuario" style="display: none; background-color:#e6fffa; padding:10px; border-radius:3px">
+            <form id="formulario_actualizacion_usuario">
+                <div class="form-group">
+                    <label >Id:</label>
+                    <input type="text" class="form-control" id="usuario_id" readonly>
+                </div>
+                <div class="form-group">
+                    <label >Nombre:</label>
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombre_m">
+                </div>
+                <div class="form-group">
+                    <label >Apellido:</label>
+                    <input type="text" class="form-control" placeholder="Apellido" id="apellido_m">
+                </div>
+                <div class="form-group">
+                    <label >Nombre de Usuario:</label>
+                    <input type="text" class="form-control" placeholder="nombreUsuario" id="nombreUsuario_m">
+                </div>
+                <div class="form-group">
+                    <label >Contraseña:</label>
+                    <input type="text" class="form-control" placeholder="Contraseña" id="contrasenia_m">
+                </div>
+                <div class="form-group">
+                    <label >Rol:</label>
+                    <input type="text" class="form-control" placeholder="Rol" id="rol_m">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            <div id="response" style="display:none; margin:10px"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/ClinicaOdonto2/templates/listaPacientes.html">Listado de Pacientes</a>
+        <a class="nav-link" href="/ClinicaOdonto2/templates/index.html">Alta de Pacientes</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Odontologos</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaOdontologos.html">Listado de Odontologos</a>
+        <a class="nav-link" href="/altaOdontologos.html">Alta de Odontologos</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Turnos</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaTurnos.html">Listado de Turnos</a>
+        <a class="nav-link" href="/altaTurnos.html">Alta de Turnos</a>
+    </li>
+</ul>
+<hr>
+<h2>Panel de Control de Usuarios</h2>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="/listaUsuarios.html">Listado de Usuarios</a>
+        <a class="nav-link" href="/altaUsuarios.html">Alta de Usuarios</a>
+    </li>
+</ul>
+<hr>
+</div>
+ <script type="text/javascript" src="/ClinicaOdonto2/templates/js/post_students.js"></script>
+
+ -->
